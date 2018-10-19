@@ -1,0 +1,10 @@
+# Aroma Affymetrix Big experiment processing config
+default:
+  raw_path: "/rnaseq/ma-raw/RN-00187" # folder with CEL files (can be CEL.gz)
+  exp_path: "/rnaseq/results/NEB_P1/RN/RN-00187aroma" # parent folder of processing and normalization results
+  # chipdb can be also name of installed annotation package or a path to ASCII CDF file downloaded from BA website
+  #chipdb: "~/tmp/big_exp/test/annotationData/chipTypes/rat2302rnensg/rat2302rnensg.cdf"
+  chipdb: "rat2302cdf" #"~/tmp/big_exp/test/annotationData/chipTypes/rat2302/rat2302.cdf"
+  exp_name: "RN-00187" # if exp_name is empty, it will be pulled from raw_path
+  rmaTrim: 0.05 # dont change
+  rmaTv: 1000 # dont change
